@@ -22,7 +22,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-7on!d9p07_1k!2--5qntqp$9d3s%v14zm5g$3h)91$gtzzop=-'
+SECRET_KEY = '\
+    django-insecure-7on!d9p07_1k!2--5qntqp$9d3s%v14zm5g$3h)91$gtzzop=-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR/ 'templates'],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -133,5 +134,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER ='YOURGMAIL@gmail.com'
-EMAIL_HOST_PASSWORD ='YOURPASS'
+EMAIL_HOST_USER = 'your gmail'
+EMAIL_HOST_PASSWORD = 'your password'
